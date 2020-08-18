@@ -1,7 +1,7 @@
 <mat-sidenav-container>
   <mat-sidenav  #sidenav role="navigation">
    <mat-nav-list>
-    <a mat-list-item>
+  <!--  <a mat-list-item>
       <mat-icon class="icon">input</mat-icon>
       <span class="label">Login</span>
     </a>
@@ -20,15 +20,42 @@
       <mat-icon class="icon">input</mat-icon>
       <span class="label">LogOut</span>
     </a>
+  -->
+
+    <a mat-list-item
+    routerLink="/lifecyclehooks">
+
+    <span class="label">Life Cycle Hooks</span>
+  </a>
+  <a mat-list-item
+    routerLink="/observables">
+
+    <span class="label">Observables</span>
+  </a>
+  <a mat-list-item
+    routerLink="/observables-pipes">
+
+    <span class="label">Observables - Pipes</span>
+  </a>
+  <a mat-list-item
+  routerLink="/templateformbasic">
+
+  <span class="label">Template Form - Basic</span>
+</a>
     <a mat-list-item
     routerLink="/templateuser">
 
     <span class="label">Template Form</span>
   </a>
   <a mat-list-item
+  routerLink="/reactiveformbasic">
+
+  <span class="label">Reactive Form - Basic</span>
+</a>
+  <a mat-list-item
   routerLink="/reactiveuser">
 
-  <span class="label">Reactive Form</span>
+  <span class="label">Reactive Form 1</span>
 </a>
 <a mat-list-item
 routerLink="/products">
@@ -46,7 +73,7 @@ routerLink="/products">
     </div>
      <div>
        <a routerLink="/">
-         Demo
+         Angular Session 2 - Demo
        </a>
      </div>
      <div fxFlex fxLayout fxLayoutAlign="flex-end"  fxHide.xs>
