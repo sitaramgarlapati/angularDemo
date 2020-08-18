@@ -1,24 +1,11 @@
-<mat-sidenav-container >
-  <mat-sidenav #sidenav mode="side">
+
     <mat-nav-list>
       <mat-list-item>
-         <a matLine [routerLink]="['/comp-templates']">
-            Templates
+         <a matLine [routerLink]="['/comp-templates']">  Templates
          </a>
-         <a matLine [routerLink]="['/user-settings']">
-          Forms
-       </a>
+
        <a matLine>
         Life Cycle Hooks
      </a>
       </mat-list-item>
     </mat-nav-list>
-  </mat-sidenav>
-
-  <mat-sidenav-content>
-    <p><button mat-button (click)="sidenav.toggle()">Toggle</button></p>
-      <div>
-        <router-outlet></router-outlet>
-      </div>
-  </mat-sidenav-content>
-</mat-sidenav-container>
