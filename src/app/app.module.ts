@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -20,6 +21,12 @@ import { LifeCycleHooksComponent } from './features/life-cycle-hooks/life-cycle-
 import { ObservablesExampleComponent } from './features/observables-example/observables-example.component';
 import { ObservablesPipesComponent } from './features/observables-pipes/observables-pipes.component';
 import { TemplateDrivenBasicComponent } from './features/templatedriven/templatedriven-basic.component';
+import { DependencyInjectionExampleComponent } from './features/dependency-injection-example/dependency-injection-example.component';
+import { MaterialExampleComponent } from './features/material-example/material-example.component';
+import {UserInjectorComponent} from './features/dependency-injection-example/user-injector.component';
+//import {UserService} from './core/services/user.service';
+//import { LoggerService } from './core/services/logger.service';
+import { UserComponent } from './features/dependency-injection-example/user.component';
 
 @NgModule({
   declarations: [
@@ -35,9 +42,14 @@ import { TemplateDrivenBasicComponent } from './features/templatedriven/template
     LifeCycleHooksComponent,
     ObservablesExampleComponent,
     ObservablesPipesComponent,
-    TemplateDrivenBasicComponent
+    TemplateDrivenBasicComponent,
+    DependencyInjectionExampleComponent,
+    MaterialExampleComponent,
+    UserInjectorComponent,
+    UserComponent
   ],
   imports: [
+    CommonModule,
     BrowserModule,
     AppRoutingModule,
     FormsModule,ReactiveFormsModule,

@@ -35,8 +35,10 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatTreeModule} from '@angular/material/tree';
 
   const materials = [
-    MatButtonModule,MatCheckboxModule, MatIconModule, MatListModule,
-    MatProgressSpinnerModule, MatSidenavModule, MatToolbarModule
+    MatButtonModule,
+    MatCheckboxModule, MatIconModule, MatListModule,
+    MatProgressSpinnerModule, MatSidenavModule, MatToolbarModule,MatPaginatorModule,MatTableModule,
+    MatSortModule,MatMenuModule,MatInputModule, MatSelectModule
   ]
 
 

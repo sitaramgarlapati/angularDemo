@@ -11,6 +11,10 @@ import { ObservablesExampleComponent} from './features/observables-example/obser
 import { ObservablesPipesComponent} from './features/observables-pipes/observables-pipes.component';
 import {TemplateDrivenBasicComponent} from './features/templatedriven/templatedriven-basic.component';
 import {ReactiveBasicComponent} from './features/reactive/reactive-basic.component';
+import {DependencyInjectionExampleComponent} from './features/dependency-injection-example/dependency-injection-example.component';
+import {UserInjectorComponent} from './features/dependency-injection-example/user-injector.component';
+import {MaterialExampleComponent} from './features/material-example/material-example.component';
+import {UserComponent} from './features/dependency-injection-example/user.component';
 
 const routes: Routes = [
   {path: '', component: WelcomeComponent},
@@ -24,6 +28,10 @@ const routes: Routes = [
   {  path: 'lifecyclehooks', component: LifeCycleHooksComponent},
   {  path: 'observables', component: ObservablesExampleComponent},
   {  path: 'observables-pipes', component: ObservablesPipesComponent},
+  { path: 'dependencyinjection', component: DependencyInjectionExampleComponent},
+  { path: 'userinject', component: UserInjectorComponent},
+  { path: 'userdemo', component: UserComponent},
+  {  path: 'materialexample', component: MaterialExampleComponent},
 ];
 
 @NgModule({
